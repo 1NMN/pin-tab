@@ -1,10 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "Duplicate Tab Shortcut",
-  "version": "1.6.0",
-  "description": "Press Alt+Shift+D to duplicate the current tab (Option+Shift+D on Mac). Shortcut is configurable.",
+  "name": "Pin Tab Shortcut",
+  "version": "1.0.0",
+  "description": "Press Alt+P to pin the current tab (Option+P on Mac). Shortcut is configurable.",
   "homepage_url": "https://github.com/stefansundin/duplicate-tab",
-  "author": "Stefan Sundin",
+  "author": "Nathan Nguyen",
   "icons": {
     "16": "img/icon16.png",
     "48": "img/icon48.png",
@@ -21,26 +21,19 @@
       "19": "img/icon19.png",
       "38": "img/icon38.png"
     },
-    "default_title": "Configure Duplicate Tab Shortcut",
+    "default_title": "Configure Pin Tab Shortcut",
     "default_popup": "popup.html"
   },
   "commands": {
-    "duplicate-tab": {
-      "suggested_key": { "default": "Alt+Shift+D" },
-      "description": "Duplicate the current tab"
-    },
-    "duplicate-to-new-window": {
-      "description": "Duplicate to a new window"
-    },
-    "pop-out-to-new-window": {
-      "description": "Pop tab out to a new window"
-    },
-    "new-tab-to-the-right": {
-      "description": "New tab to the right"
+    "pin-tab": {
+      "suggested_key": { "default": "Alt+P" },
+      "description": "Pin the current tab"
     }
   },
   "permissions": [
-    "storage"
+    "tabs",
+    "storage",
+    "commands"
   ],
   "minimum_chrome_version": "96"
 }
